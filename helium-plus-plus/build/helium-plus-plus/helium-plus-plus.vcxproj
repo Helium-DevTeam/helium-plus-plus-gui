@@ -39,7 +39,6 @@
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -85,16 +84,11 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <RunCodeAnalysis>false</RunCodeAnalysis>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
   <PropertyGroup Label="Vcpkg">
     <VcpkgEnableManifest>true</VcpkgEnableManifest>
   </PropertyGroup>
-  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <VcpkgInstalledDir>E:\vcpkg</VcpkgInstalledDir>
-    <VcpkgUseStatic>true</VcpkgUseStatic>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
     <VcpkgConfiguration>Debug</VcpkgConfiguration>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,7 +101,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <ProgramDataBaseFileName>E:/repos/helium-plus-plus-gui/helium-plus-plus/build/helium-plus-plus/Debug/helium-plus-plusd.pdb</ProgramDataBaseFileName>
@@ -117,9 +111,6 @@
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;__CMAKE_INSTALL_PREFIX__="C:/Program Files (x86)/helium-plus-plus";__XTD_INCLUDE_PATH__="C:/Program Files (x86)/xtd/include";__XTD_LIB_PATH__="C:/Program Files (x86)/xtd/lib";__XTD_CONSOLE_INCLUDE_PATH__="C:/Program Files (x86)/xtd/include";__XTD_CONSOLE_LIB_PATH__="C:/Program Files (x86)/xtd/lib";__XTD_FORMS_INCLUDE_PATH__="C:/Program Files (x86)/xtd/include";__XTD_FORMS_LIB_PATH__="C:/Program Files (x86)/xtd/lib";__XTD_FORMS_RESOURCES_PATH__="C:/Program Files (x86)/xtd/share/xtd/resources";__XTD_ASSEMBLY_VERSION__="";__CMAKE_TARGET_TYPE__=2;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <EnableModules>true</EnableModules>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;__CMAKE_INSTALL_PREFIX__=\"C:/Program Files (x86)/helium-plus-plus\";__XTD_INCLUDE_PATH__=\"C:/Program Files (x86)/xtd/include\";__XTD_LIB_PATH__=\"C:/Program Files (x86)/xtd/lib\";__XTD_CONSOLE_INCLUDE_PATH__=\"C:/Program Files (x86)/xtd/include\";__XTD_CONSOLE_LIB_PATH__=\"C:/Program Files (x86)/xtd/lib\";__XTD_FORMS_INCLUDE_PATH__=\"C:/Program Files (x86)/xtd/include\";__XTD_FORMS_LIB_PATH__=\"C:/Program Files (x86)/xtd/lib\";__XTD_FORMS_RESOURCES_PATH__=\"C:/Program Files (x86)/xtd/share/xtd/resources\";__XTD_ASSEMBLY_VERSION__=\"\";__CMAKE_TARGET_TYPE__=2;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -156,11 +147,11 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <ProgramDataBaseFileName>E:/repos/helium-plus-plus-gui/helium-plus-plus/build/helium-plus-plus/Release/helium-plus-plus.pdb</ProgramDataBaseFileName>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
@@ -168,13 +159,6 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
-      <EnableModules>true</EnableModules>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;__CMAKE_INSTALL_PREFIX__=\"C:/Program Files (x86)/helium-plus-plus\";__XTD_INCLUDE_PATH__=\"C:/Program Files (x86)/xtd/include\";__XTD_LIB_PATH__=\"C:/Program Files (x86)/xtd/lib\";__XTD_CONSOLE_INCLUDE_PATH__=\"C:/Program Files (x86)/xtd/include\";__XTD_CONSOLE_LIB_PATH__=\"C:/Program Files (x86)/xtd/lib\";__XTD_FORMS_INCLUDE_PATH__=\"C:/Program Files (x86)/xtd/include\";__XTD_FORMS_LIB_PATH__=\"C:/Program Files (x86)/xtd/lib\";__XTD_FORMS_RESOURCES_PATH__=\"C:/Program Files (x86)/xtd/share/xtd/resources\";__XTD_ASSEMBLY_VERSION__=\"\";__CMAKE_TARGET_TYPE__=2;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
@@ -355,6 +339,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="heliumpp\gui\forms\main_form\main_form.ixx" />
+    <ClCompile Include="heliumpp\gui\forms\splash_screen\splash_screen.ixx" />
+    <ClCompile Include="heliumpp\main\main.ixx" />
+    <ClCompile Include="heliumpp\shared\helium_object\helium_object.ixx" />
     <None Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\resources\helium-plus-plus.ico">
     </None>
     <ClCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\properties\startup.cpp" />

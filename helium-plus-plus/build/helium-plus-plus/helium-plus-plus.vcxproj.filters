@@ -4,7 +4,10 @@
     <ClCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\properties\startup.cpp">
       <Filter>properties</Filter>
     </ClCompile>
+    <ClCompile Include="heliumpp\main\main.ixx" />
     <ClCompile Include="heliumpp\gui\forms\main_form\main_form.ixx" />
+    <ClCompile Include="heliumpp\shared\helium_object\helium_object.ixx" />
+    <ClCompile Include="heliumpp\gui\forms\splash_screen\splash_screen.ixx" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\CMakeLists.txt" />

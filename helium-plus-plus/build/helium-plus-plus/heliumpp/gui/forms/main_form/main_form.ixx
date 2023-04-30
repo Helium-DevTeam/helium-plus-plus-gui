@@ -16,7 +16,7 @@ export namespace heliumpp
 		helium_main_form_class()
 		{
 			this->control::text("Helium++");
-			this->control::size({800, 600});
+			this->control::size({ 800, 600 });
 
 			this->form::start_position(form_start_position::center_screen);
 			this->form::menu(this->main_menu_);

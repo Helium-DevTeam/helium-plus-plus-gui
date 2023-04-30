@@ -5,7 +5,7 @@
 
 #include <xtd/startup.h>
 
-import heliumpp.gui.forms.main_form;
+import heliumpp.main;
 
-startup_(heliumpp::helium_main_form_class);
+startup_(heliumpp::helium_main_class);
 #pragma endregion
