@@ -4,10 +4,10 @@
     <ClCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\properties\startup.cpp">
       <Filter>properties</Filter>
     </ClCompile>
-    <ClCompile Include="heliumpp\main\main.ixx" />
-    <ClCompile Include="heliumpp\gui\forms\main_form\main_form.ixx" />
-    <ClCompile Include="heliumpp\shared\helium_object\helium_object.ixx" />
-    <ClCompile Include="heliumpp\gui\forms\splash_screen\splash_screen.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\gui\forms\main_form\main_form.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\gui\forms\splash_screen\splash_screen.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\shared\helium_object\helium_object.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\main\main.ixx" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\CMakeLists.txt" />
@@ -35,6 +35,9 @@
     </Filter>
     <Filter Include="resources">
       <UniqueIdentifier>{54E8563A-CB16-388F-B3AE-1ADE2CF5180F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b42c1c27-ea7b-443d-8dba-b1010ca1c3e4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

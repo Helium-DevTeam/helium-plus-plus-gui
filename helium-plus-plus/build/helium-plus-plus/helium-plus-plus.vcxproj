@@ -338,12 +338,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="heliumpp\gui\forms\main_form\main_form.ixx" />
-    <ClCompile Include="heliumpp\gui\forms\splash_screen\splash_screen.ixx" />
-    <ClCompile Include="heliumpp\main\main.ixx" />
-    <ClCompile Include="heliumpp\shared\helium_object\helium_object.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\gui\forms\main_form\main_form.ixx" />
     <None Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\resources\helium-plus-plus.ico">
     </None>
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\gui\forms\splash_screen\splash_screen.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\main\main.ixx" />
+    <ClCompile Include="..\..\helium-plus-plus\src\heliumpp\shared\helium_object\helium_object.ixx" />
     <ClCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\properties\startup.cpp" />
     <None Include="vcpkg.json" />
     <ResourceCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\build\helium-plus-plus\resources\helium-plus-plus.rc" />
