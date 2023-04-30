@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\properties\startup.cpp">
+      <Filter>properties</Filter>
+    </ClCompile>
+    <ClCompile Include="heliumpp\gui\forms\main_form\main_form.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\resources\helium-plus-plus.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\helium-plus-plus\properties\target_properties.cmake">
+      <Filter>properties</Filter>
+    </None>
+    <None Include="vcpkg.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\repos\helium-plus-plus-gui\helium-plus-plus\build\helium-plus-plus\resources\helium-plus-plus.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{AFD0D2B4-D97C-33C2-B689-CAE56DD1E562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="properties">
+      <UniqueIdentifier>{63012C79-91C3-3F06-A465-3AFBD4BBA818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{54E8563A-CB16-388F-B3AE-1ADE2CF5180F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
